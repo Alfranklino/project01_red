@@ -1,0 +1,89 @@
+ body{
+     max-width: 1280px;
+     /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+     
+ }
+ .banner{
+     height: 450px;
+     /* It's possible to have the girl at the top and the black background that overlays the flowers */
+     background-image: url( "../images/banner-girl.png"), linear-gradient(rgba( 0, 0, 0, 0.7), rgba(0,0,0, 0.7)), url("../images/flower-bkgd.jpg");
+     /* background-image: linear-gradient(rgba( 0, 0, 0, 0.4), rgba(0,0,0, 0.4)), url( "../images/banner-girl.png"),  url("../images/flower-bkgd.jpg"); */
+     width: 100%;
+     background-repeat: no-repeat, no-repeat;
+     background-size: 198px 455px, contain, cover;
+     background-position: 50% -1250%, 100% 100%, 100% 100%;  
+     
+     /* margin-left:5%;
+     margin-right:5%; */
+     left:auto;
+     right:auto;
+     text-align: center;
+ }
+
+ .banner p{
+    position:relative;
+    top:45%;
+    z-index: 99;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 2.5em;
+ }
+
+ nav{
+     text-align: center;
+ }
+ .navigation-menu{
+     display:inline;
+
+ }
+
+.social-group{
+    text-align: left;
+    /* position: absolute; */
+    left:85%;
+    top:25%;
+}
+
+ .social-links{
+     display:block;
+     margin-bottom:10%;
+}
+ .social-links a{
+    text-decoration: none;
+    color: floralwhite;
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 0.85em;      
+ }
+
+p.address_item{
+    color:floralwhite;
+    /* z-index: 99; */
+}
+
+#email{
+    color:#aaaaaa;
+}
+
+#address{
+
+}
+
+ footer{
+    /* position: relative; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20%;
+    background-color: #242424;    
+    min-height: 278px;     
+    bottom:10%;
+    padding-left: 2%;
+    padding-right: 2%;
+ }
+
+ .text-social{
+     display:inline;
+ }

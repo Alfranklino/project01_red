@@ -1,0 +1,91 @@
+html{
+    /* width: 600px; */
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* max-width: 600px; */
+    min-width: 480px;
+    width: 100%;
+    text-align: center;
+}
+
+.header-landing{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+img{
+    width: auto;
+}
+.navAndLogos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    background-color: red;    
+}
+
+.navbar{
+    align-self: flex-start;
+    order:3;
+    background-color: cadetblue;
+    width: 100%;
+    height: 20px;
+    padding: 5px;
+}
+
+.nav-link{
+    display: inline-block;
+}
+
+/* .gallery{
+    max-width:100%;
+    display: grid;
+    grid-template-areas:
+    "whole-gal-img"
+    "half-gal-img half-gal-img" 
+    "half-gal-img half-gal-img" 
+    "whole-gal-img";
+
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 50% 1fr;
+}
+
+.whole-gal-img{
+    grid-area: whole-gal-img;
+    background-color: blue;
+}
+
+.half-gal-img{
+    grid-area: half-gal-img;
+    background-color: #00ff00;
+} */
+
+.gallery{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    /* display: grid;
+    grid-template-rows: 100% 50% 50% 100%;
+    grid-template-columns:  */
+}
+
+.gallery-item{
+    max-width:100%;
+    /* no need max-height:100%;     */
+    /* no need margin-left: 0.5%; */
+    margin-right: auto;
+    margin-top: 0.5%;
+}
+
+.half-gal-img{
+    max-width:49%;
+    max-height:auto;
+    /*no need margin-left: 0.5%; */
+    margin-right: auto;
+}
