@@ -89,3 +89,30 @@ img{
     /*no need margin-left: 0.5%; */
     margin-right: auto;
 }
+
+.sign-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.emailTo{
+    display: flex;
+    flex-direction: row;
+    background-color: #ff00ff;
+    justify-content: space-between;
+    width: 80%;
+    padding: 0.25%;
+    align-self: center;
+}
+.su-input-text{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+
+}
+.su-input-text input[type="text"]{
+    width: 80%;
+    margin-left: 1%;
+}
