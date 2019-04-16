@@ -7,23 +7,35 @@ body{
     min-width: 480px;
     width: 100%;
     text-align: center;
+    height: 100%;    
 }
 
 .header-landing{
     display:flex;
     flex-direction: column;
-    width: 100%;
+    width: 100%;    
 }
 
-img{
-    width: auto;
-}
+
 .navAndLogos{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     width: 100%;
-    background-color: red;    
+    background-color: white;
+    margin: 1% 0%; 
+    /* height: 100%;  */
+      
+}
+
+ .navAndLogos div{
+    display: flex;  
+    align-content: center;
+    justify-content: center; 
+}
+
+.navAndLogos img:nth-child(1){
+    width: 75%;    
 }
 
 .navbar{
@@ -31,14 +43,30 @@ img{
     order:3;
     background-color: cadetblue;
     width: 100%;
-    height: 20px;
+    height: 35%;
     padding: 5px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-top: 0%;
+    /* margin-bottom: 5%; */
+    border-top: 1px solid #d30909
+}
+
+.navbar ul{
+    height: 3em; /*In order for that container to proportionnal to the text inside.*/    
+    text-align: center;
 }
 
 .nav-link{
     display: inline-block;
+    line-height: 3em; /* Awesome!! This rule is connected to the .nav ul one above. */
+    margin-right: 5%;
 }
 
+.banner{
+    margin-top: 10%;
+    
+}
 
 .gallery{
     display: flex;
