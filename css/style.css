@@ -1,6 +1,3 @@
-html{
-    /* width: 600px; */
-}
 body{
     display: flex;
     flex-direction: column;
@@ -50,16 +47,20 @@ img{
     width: 100%;
 }
 
-.gallery-item{
-    max-width:100%;
-    margin-right: auto;
-    margin-top: 0.5%;
+.whole-gal-img{
+    flex:100%;
+    margin: 1px 0px;
 }
 
 .half-gal-img{
-    max-width:49%;
+    flex: 48%; /*We might use 50%, but this size depends on both the right and left margin*/
+    margin: 1px 1px;
+}
+
+.gallery img{
+    width: 100%;
     max-height:auto;
-    margin-right: auto;
+    margin: 0;
 }
 
 .sign-up{
