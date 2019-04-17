@@ -29,19 +29,24 @@ body{
 }
 
  .navAndLogos div{
-    display: flex;  
-    align-content: center;
-    justify-content: center; 
+    display: flex;
+    flex-direction: row;  
+    /* align-content: space-between; */
+    justify-content: center;
+    padding:0;
+    margin-right: 2%; 
+    margin-left: -2%;
 }
 
-.navAndLogos img:nth-child(1){
-    width: 75%;    
+.logo img{
+    width: 75%;
+    /* align-self: flex-start;    */
 }
 
 .navbar{
     align-self: flex-start;
     order:3;
-    background-color: cadetblue;
+    background-color: white;
     width: 100%;
     height: 35%;
     padding: 5px;
@@ -49,7 +54,7 @@ body{
     margin-right: 1.5%;
     margin-top: 0%;
     /* margin-bottom: 5%; */
-    border-top: 1px solid #d30909
+    border-top: 1px solid #aaaaaa;
 }
 
 .navbar ul{
@@ -60,12 +65,23 @@ body{
 .nav-link{
     display: inline-block;
     line-height: 3em; /* Awesome!! This rule is connected to the .nav ul one above. */
-    margin-right: 5%;
+    margin-right: 10%;
 }
 
 .banner{
-    margin-top: 10%;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0%;
+    margin-bottom: 8%;
+    width: 100%;
+    height: 450px;
+    /* background-image: url( "../images/banner-girl.png"), linear-gradient(rgba( 0, 0, 0, 0.7), rgba(0,0,0, 0.7)), url("../images/flower-bkgd.jpg"); */
+     background-image: linear-gradient(rgba( 0, 0, 0, 0.2), rgba(0,0,0, 0.2)), url( "../images/banner-girl.png"),  url("../images/flower-bkgd.jpg");
+     
+     background-repeat: no-repeat, no-repeat;
+     background-size: contain, 198px 455px, cover;
+     background-position: 100% 100%, 50% -1250%, 100% 100%;
 }
 
 .gallery{
@@ -73,6 +89,7 @@ body{
     flex-flow: row wrap;
     justify-content: space-between;
     width: 100%;
+    margin-top: 8%;
 }
 
 .whole-gal-img{
