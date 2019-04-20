@@ -7,7 +7,12 @@ body{
     min-width: 480px;
     width: 100%;
     text-align: center;
-    height: 100%;    
+    height: 100%;
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 14px;
+    color: #2d2d2d;
+    
 }
 
 .header-landing{
@@ -35,11 +40,19 @@ body{
     justify-content: center;
     padding:0;
     margin-right: 2%; 
-    margin-left: -2%;
+    margin-left: 2%;
+    max-width: 30%;
 }
 
 .logo img{
-    width: 75%;
+    width: 80%;
+    height: auto;
+    /* align-self: flex-start;    */
+}
+
+.basket img{
+    width: 70%;
+    height: auto;
     /* align-self: flex-start;    */
 }
 
@@ -54,24 +67,35 @@ body{
     margin-right: 1.5%;
     margin-top: 0%;
     /* margin-bottom: 5%; */
-    border-top: 1px solid #aaaaaa;
+    border-top: 1px solid #d7d7d7;
 }
 
 .navbar ul{
-    height: 3em; /*In order for that container to proportionnal to the text inside.*/    
+    height: 2.5em; /*In order for that container to proportionnal to the text inside.*/    
     text-align: center;
+    font-weight: 500;
 }
 
 .nav-link{
     display: inline-block;
-    line-height: 3em; /* Awesome!! This rule is connected to the .nav ul one above. */
+    line-height: 2.5em; /* Awesome!! This rule is connected to the .nav ul one above. */
     margin-right: 10%;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: #e2574c;
+}
+
+.nav-link a:hover{
+    color: #b64036;
 }
 
 .banner{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 0%;
     margin-bottom: 8%;
     width: 100%;
@@ -84,6 +108,44 @@ body{
      background-position: 100% 100%, 50% -1250%, 100% 100%;
 }
 
+.banner-title{
+    color: white;
+    font-weight: 500;
+    margin-bottom: 4%;
+    text-shadow: 1px 1px #242424;
+}
+
+.banner h1{
+    color: white;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-size: 250%;
+    width: 60%;
+    text-shadow: 1px 1px #242424;
+}
+
+.in-few-words{
+    width: 60%;
+}
+
+.head-title{
+    font-size: 250%;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display';
+}
+
+.head-italic{
+    font-style: italic;
+}
+
+.head-bold{
+    font-weight: bold;
+}
+
+.in-few-words p{
+    line-height: 1.8
+}
+
 .gallery{
     display: flex;
     flex-flow: row wrap;
@@ -94,12 +156,20 @@ body{
 
 .whole-gal-img{
     flex:100%;
-    margin: 1px 0px;
+    margin: 1.5px 0px;
 }
 
 .half-gal-img{
     flex: 48%; /*We might use 50%, but this size depends on both the right and left margin*/
-    margin: 1px 1px;
+    margin: 1px 0px;
+}
+
+.i11, .i21{
+    margin-right: 3px;
+}
+
+.i12, .i22{
+    margin-left: 3px;
 }
 
 .gallery img{
@@ -108,21 +178,51 @@ body{
     margin: 0;
 }
 
+.most-loved{
+    width: 100%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
 .sign-up{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 100%;
+    align-items: center;
+    /* max-width: 100%; */
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/wave-bkgd.jpg");
+    background-repeat: no-repeat;
+    background-size: auto auto; /*width height*/
+    background-position: center;
+    color: white;
 }
 
-.emailTo{
+.sign-up h1 span{
+    /* color: white; */
+    text-shadow: 1px 1px #242424;
+
+}
+.sign-up p{
+    width: 60%;
+    line-height: 1.8;
+    margin-bottom: 6%;
+    text-shadow: 1px 1px #242424;
+}
+
+.su-emailTo{
     display: flex;
     flex-direction: row;
-    background-color: #ff00ff;
+    background-color: white;
     justify-content: space-between;
+    align-items: center;
     width: 80%;
+    height: 30px;
     padding: 0.25%;
     align-self: center;
+    border-radius: 15px;
+    
 }
 .su-input-text{
     display: flex;
@@ -132,18 +232,79 @@ body{
 }
 .su-input-text input[type="text"]{
     width: 80%;
-    margin-left: 1%;
+    margin-left: 3%;
+    padding-left: 3px;
+    border: none;
+}
+
+.su-input-submit input[type="submit"]{
+    margin-right: 3px;
+    background:transparent;
+    border:none;
+    color:#FFFFFF;
+    outline: none;
+    background: #e2574c;
+    padding: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
 }
 
 footer{
     display:flex;
     flex-direction: column;
-    background-color: #000000;
-    color: #ffffff;
+    justify-content: space-around;
+    background-color: #242424;
+    color: white;
     width: 100%;
+    height: 200px; /*MIN-HEIGHT??*/
+    margin-top: 10px;
+    font-family: 'Playfair Display';
+    
 }
 
-footer li{
+.copyrightAndAddress{
+    width: 100%;
+    margin-top: 15px;
+    
+}
+.copyright{
+    margin-bottom: 10px;
+    line-height: 1.5;
+    
+}
+
+.emailAddress{
+    margin-bottom: 10px;
+}
+
+.emailAddress a{
+    /* text-decoration: none; */
+    color: white;
+}
+
+.textcopyright{
+    display: inline;
+}
+
+.location-address{
+    color: #969696;
+    line-height: 1.5;
+}
+
+.social{
+    margin-bottom: 10px;
+}
+
+.social li{
     display: inline;
     margin-left: 2%;
+}
+
+.social a{
+    text-decoration: none;
+    color: floralwhite;
+}
+
+.text-social{
+    display: none;
 }
