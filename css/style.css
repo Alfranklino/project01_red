@@ -258,6 +258,10 @@ body{
     cursor: pointer;
 }
 
+.su-input-submit input[type="submit"]:hover{
+    background-color: #b64036;
+}
+
 footer{
     display:flex;
     flex-direction: column;
@@ -345,14 +349,6 @@ footer{
         flex-wrap: nowrap;
         justify-content: center;
     }
-
-    .gallery{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        width: 100%;
-        margin-top: 8%;
-    }
     
     .whole-gal-img{
         flex:49%;
@@ -391,13 +387,88 @@ footer{
         margin-left: 0px;
         
     }
-    
-    .gallery img{
-        width: 100%;
-        max-height:auto;
-        margin: 0;
+
+    .su-input-submit input[type="submit"]:hover{
+        background-color: #b64036;
     }
 
+    footer{
+        display:flex;
+        flex-direction: row; /*...*/
+        justify-content: space-between;/*...*/
+        align-items: center; /*...*/
+        background-color: #242424;
+        color: white;
+        width: 100%;
+        height: 200px; /*MIN-HEIGHT??*/
+        margin-top: 10px;
+        font-family: 'Playfair Display';
+        
+        
+    }
+    .copyRAndAddress{
+        width: 60%;
+        margin-top: 15px;
+        margin-left: 5%;
+        text-align: left;
+        
+    }
+  
+    .social{
+        margin-bottom: 10px;
+        margin-right: 5%;
+        width: 15%;
+        line-height: 1.8;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .social li{
+        display: block;
+        margin-left: 2%;
+        text-align: left;
+    }
+
+    .text-social{
+        display: initial;
+    }
+
+}
+
+@media (min-width: 1280px){
+    body{
+        min-width: 1280px;
+    }
+
+    .in-few-words{
+        width: 45%;
+    }
+
+    .sign-up{
+    width: 100%;
+    background-size: cover;
+    background-position: 0 center;
+    }
+
+    .su-emailTo{
+        width: 35%;
+        padding-right: 1px;
+    }
+    .sign-up p{
+        width: 45%;
+        margin-bottom: 1%;
+    }
+
+    .su-input-submit input[type="submit"]{
+        padding: 7px 20px;
+        margin-right: 3px;
+    }
+
+    .su-input-submit input[type="submit"]:hover{
+        background-color: #b64036;
+    }
+
+    
 }
 
 
