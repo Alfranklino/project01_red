@@ -4,7 +4,6 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* max-width: 600px; */
     min-width: 480px;
     width: 100%;
     text-align: center;
@@ -26,18 +25,16 @@ body{
 .navAndLogos{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-between;    
     width: 100%;
     background-color: white;
-    margin: 1% 0%; 
-    /* height: 100%;  */
+    margin: 1% 0%;     
       
 }
 
  .navAndLogos div{
     display: flex;
-    flex-direction: row;  
-    /* align-content: space-between; */
+    flex-direction: row;      
     justify-content: center;
     padding:0;
     margin-right: 2%; 
@@ -48,13 +45,11 @@ body{
 .logo img{
     width: 80%;
     height: auto;
-    /* align-self: flex-start;    */
 }
 
 .basket img{
     width: 70%;
-    height: auto;
-    /* align-self: flex-start;    */
+    height: auto;    
 }
 
 .navbar{
@@ -66,8 +61,7 @@ body{
     padding: 5px;
     margin-left: 1.5%;
     margin-right: 1.5%;
-    margin-top: 0%;
-    /* margin-bottom: 5%; */
+    margin-top: 0%;    
     border-top: 1px solid #d7d7d7;
 }
 
@@ -100,13 +94,11 @@ body{
     margin-top: 0%;
     margin-bottom: 8%;
     width: 100%;
-    height: 450px;
-    /* background-image: url( "../images/banner-girl.png"), linear-gradient(rgba( 0, 0, 0, 0.7), rgba(0,0,0, 0.7)), url("../images/flower-bkgd.jpg"); */
-     background-image: linear-gradient(rgba( 0, 0, 0, 0.2), rgba(0,0,0, 0.2)), url( "../images/banner-girl.png"),  url("../images/flower-bkgd.jpg");
-     
-     background-repeat: no-repeat, no-repeat;
-     background-size: contain, 198px 455px, cover;
-     background-position: 100% 100%, 50% -1250%, 100% 100%;
+    height: 450px;    
+    background-image: linear-gradient(rgba( 0, 0, 0, 0.2), rgba(0,0,0, 0.2)), url( "../images/banner-girl.png"),  url("../images/flower-bkgd.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, 198px 455px, cover;
+    background-position: 100% 100%, 50% -1250%, 100% 100%;
 }
 
 .banner-title{
@@ -178,19 +170,18 @@ body{
     max-height:auto;
     margin: 0;
 }
-/* .gallery .whole-gal-img:nth-child(1){
-    background-image: url("../images/mens-category.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 481.6px;    
-} */
-
-
-
 .most-loved{
     width: 100%;
     margin-top: 8%;
     margin-bottom: 8%;
+}
+
+.slideshow{
+    margin: 0 10%;
+}
+.carousel-cell{
+    width: 100%;
+    padding: 1rem;
 }
 
 .sign-up{
@@ -198,7 +189,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* max-width: 100%; */
     width: 100%;
     height: 600px;
     background-image: url("../images/wave-bkgd.jpg");
@@ -209,7 +199,6 @@ body{
 }
 
 .sign-up h1 span{
-    /* color: white; */
     text-shadow: 1px 1px #242424;
 
 }
@@ -290,8 +279,7 @@ footer{
     margin-bottom: 10px;
 }
 
-.emailAddress a{
-    /* text-decoration: none; */
+.emailAddress a{    
     color: white;
 }
 
@@ -388,6 +376,10 @@ footer{
         
     }
 
+    .carousel-cell{
+        width: 50%;    
+    }
+
     .su-input-submit input[type="submit"]:hover{
         background-color: #b64036;
     }
@@ -435,6 +427,7 @@ footer{
 
 }
 
+/* This third Part is for Desktop devices (1280px and above) */
 @media (min-width: 1280px){
     body{
         min-width: 1280px;
@@ -442,6 +435,14 @@ footer{
 
     .in-few-words{
         width: 45%;
+    }
+
+
+    .slideshow{
+        margin: 0 5%;
+    }
+    .carousel-cell{
+        width: 25%;    
     }
 
     .sign-up{

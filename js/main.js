@@ -1,4 +1,15 @@
-// const col = document.getElementsByClassName("banner-title");
-// // console.log(col);
-// // col[0].innerHTML = 'SPRING COLLECTION';
-// console.log("Hello World");
+// (function($){
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        var elem = document.querySelector('.slideshow');
+        var flkty = new Flickity( elem, {
+    //     // options
+        cellAlign: 'left',
+        wrapAround: true
+    //     contain: true        
+        });
+
+    });
+
+// })(jquery)
