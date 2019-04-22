@@ -1,3 +1,4 @@
+/* This first part is for mobile */
 body{
     display: flex;
     flex-direction: column;
@@ -177,6 +178,14 @@ body{
     max-height:auto;
     margin: 0;
 }
+/* .gallery .whole-gal-img:nth-child(1){
+    background-image: url("../images/mens-category.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 481.6px;    
+} */
+
+
 
 .most-loved{
     width: 100%;
@@ -308,3 +317,87 @@ footer{
 .text-social{
     display: none;
 }
+
+
+/* This second Part is for Tablet devices (600px and above) */
+@media (min-width: 600px){
+    body{
+        min-width: 600px;            
+    }
+
+    .navAndLogos{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;       
+          
+    }    
+    
+    .navbar{
+        align-self: inherit;        
+        order:0;
+        border-top: none;        
+    }
+
+    .navbar ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .gallery{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 8%;
+    }
+    
+    .whole-gal-img{
+        flex:49%;
+        margin: 1px 0px;
+        padding: 0px;        
+    }
+
+    .whole-gal-img:nth-child(1){
+        margin-right: 2.5px;
+    }
+
+    .whole-gal-img:nth-child(2){
+        margin-left: 3px;
+    }
+    
+    .half-gal-img{
+        flex: 24%; /*We might use 50%, but this size depends on both the right and left margin*/
+        margin: 1px 0px;
+    }
+    
+    .i21{
+        margin-right: 3px;
+    }
+    
+    .i11{
+        margin-left: 3px;
+        margin-right: 0px;
+    }
+
+    .i12{
+        margin-left: 3px;
+    }
+
+    .i22{
+        margin-right: 3px;
+        margin-left: 0px;
+        
+    }
+    
+    .gallery img{
+        width: 100%;
+        max-height:auto;
+        margin: 0;
+    }
+
+}
+
+
